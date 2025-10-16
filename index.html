@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Portafolio - Santiago Moran</title>
+    <meta name="description" content="Soy Santiago Moran, desarrollador web apasionado por crear experiencias digitales simples y efectivas. Especializado en HTML, CSS y con conocimientos en JavaScript.">
+    <meta name="keywords" content="desarrollador web, portafolio, HTML, CSS, JavaScript, diseño web, minimalista, proyectos web, Santiago Moran">
+    <meta name="author" content="Santiago Moran">
+
+    <!-- Robots y SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Portafolio de Santiago Moran">
+    <meta property="og:description" content="Soy Santiago Moran, desarrollador web apasionado por crear experiencias digitales simples y efectivas. Especializado en HTML, CSS y con conocimientos en JavaScript.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://santiago-moran.github.io/new-portfolio">
+    <meta property="og:image" content="https://santiago-moran.github.io/images/profile-image.png">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portafolio de Santiago Moran">
+    <meta name="twitter:description" content="Soy Santiago Moran, desarrollador web apasionado por crear experiencias digitales simples y efectivas. Especializado en HTML, CSS y con conocimientos en JavaScript.">
+    <meta name="twitter:image" content="https://santiago-moran.github.io/images/profile-image.png">
+    <meta name="twitter:creator" content="@santi_moran">
+
+    <!-- Fuentes y recursos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/79a487990f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h2>Portafolio</h2>
+            </div>
+            <div>
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <span class="material-symbols-outlined icon-menu">density_medium</span>
+                </label>
+                <label for="menu" class="close-menu"></label>
+            </div>
+            <ul class="menu-items">
+                <li class="menu-items__item"><a href="#about">Sobre Mí</a></li>
+                <li class="menu-items__item"><a href="#projects">Proyectos</a></li>
+                <li class="menu-items__item"><a href="#skills">Habilidades</a></li>
+                <li class="menu-items__item"><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="home__img">
+                <img src="images/profile-image.png" alt="Imagen de perfil">
+            </div>
+            <div>
+                <div class="home__text">
+                    <div>
+                        <h1>Santiago Moran</h1>
+                    </div>
+                    <div>
+                        <h2>Desarrollador Web</h2>
+                    </div>
+                </div>
+                <div class="home__btn">
+                    <button class="explore-btn">
+                        <a href="#about">Explorar</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <h2>Sobre mí</h2>
+            <div class="about__description">
+                <p>Me considero un desarrollador web apasionado por crear experiencias digitales simples y efectivas.</p>
+                <p>Me especializo en HTML y CSS, con un enfoque en diseño minimalista y código limpio. Mi objetivo es crear sitios web que sean tanto funcionales como estéticamente agradables.</p>
+                <p>Actualmente, estoy expandiendo mis conocimientos en JavaScript y otras tecnologías modernas para seguir creciendo como desarrollador.</p>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2>Proyectos</h2>
+            <div class="projects__projects-container">
+                <div class="projects-container__project">
+                    <div>
+                        <div class="project__img">
+                            <img src="images/meg.png" alt="Imagen de la página de eventos">
+                        </div>
+                        <h3>Página de Eventos Gastronómicos</h3>
+                    </div>
+                    <div>
+                        <p class="project__description">Sitio web creado para una empresa de Eventos Gastronómicos. La página posee pequeñas animaciones, pero conservando su estilo minimalista.</p>
+                        <p class="technologies">HTML, CSS</p>
+                    </div>
+                    <button class="explore-btn project-btn">
+                        <a target="_blank" href="https://santiago-moran.github.io/MEG-Eventos-Gastronomicos/">Ir al sitio</a>
+                    </button>
+                </div>
+                <div class="projects-container__project">
+                    <div>
+                        <div class="project__img">
+                            <img src="images/portfolio.png" alt="Imagen de la web del portafolio personal">
+                        </div>
+                        <h3>Portafolio Personal</h3>
+                    </div>
+                    <div>
+                        <p class="project__description">Página web personal, creada con el objetivo de poner en práctica mis conocimientos y mostrar un poco de mis proyectos y cursos.</p>
+                        <p class="technologies">HTML, CSS</p>
+                    </div>
+                    <button class="explore-btn project-btn">
+                        <a target="_blank" href="https://santiago-moran.github.io/portfolio_html-css/">Ir al sitio</a>
+                    </button>
+                </div>
+                <div class="projects-container__project">
+                    <div>
+                        <div class="project__img">
+                            <img src="images/bbva.png" alt="Imagen del layout de la app">
+                        </div>
+                        <h3>Layout de App BBVA</h3>
+                    </div>
+                    <div>
+                        <p class="project__description">Layout de la app del banco BBVA, se replican las mismas secciones y posee un menú lateral desplegable. </p>
+                        <p class="technologies">HTML, CSS</p>
+                    </div>
+                    <button class="explore-btn project-btn">
+                        <a target="_blank" href="https://santiago-moran.github.io/bbva-layout/">Ir al sitio</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h2>Habilidades</h2>
+            <div>
+                <div class="skills__card">
+                    <div class="card__front-face">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="card__back-face">
+                        <p>Estructura semántica y accesible para la web moderna.</p>
+                    </div>
+                </div>
+                <div class="skills__card">
+                    <div class="card__front-face">
+                            <h3>CSS</h3>
+                    </div>
+                    <div class="card__back-face">
+                        <p>Diseños responsive y animaciones con enfoque minimalista.</p>
+                    </div>
+                </div>
+                <div class="skills__card">
+                    <div class="card__front-face">
+                        <h3>GIT</h3>
+                    </div>
+                    <div class="card__back-face">
+                        <p>Control de versiones y gestión de proyectos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contacto</h2>
+            <div>
+                <div class="contact__contact-info">
+                    <span class="material-symbols-outlined">mail</span>
+                    <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=santim366@gmail.com">santim366@gmail.com</a>
+                </div>
+                <div class="contact__contact-info">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>Buenos Aires, Argentina</p>
+                </div>
+            </div>
+            <form class="contact__form" action="https://formsubmit.co/santim366@gmail.com" method="post">
+                <input type="text" name="name" id="" placeholder="NOMBRE" required>
+                <input type="email" name="email" id="" placeholder="EMAIL" required>
+                <textarea name="message" id="" placeholder="MENSAJE" required></textarea>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Santiago Moran</p>
+        <div>
+            <a target="_blank" href="https://github.com/santiago-moran"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=santim366@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
+
